@@ -24,7 +24,7 @@ On the RPi Pico:
 
   RED = GP5
   
-  WHITE = GP4
+  WHITE = GP4[250, 0, 4, 1, 64, 1, 127, 55, 192, 'left eye lid half open', 1]
   
   BLACK = GROUND
   
@@ -32,6 +32,12 @@ On the RPi Pico:
 There is also a power connection to the circuit board in the head. Just leave that connected.
 
 The tablet interface provides access to test and calibration via the "Mabu Factory Mode" icon. By running the various tests and monitoring the UART output I was able to piece together a set of commands to control the head.
+
+The code reads commands from a text file. Here is an example line:
+
+[250, 0, 4, 1, 64, 1, 127, 55, 192, 'left eye lid half open', 1]
+
+Basically a python list. The first set of numbers is the head movement UART bytes. The number of bytes is variable. Then there is a comment string and the last number is a delay, in seconds.
 
 Enjoy!
 
