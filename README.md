@@ -39,6 +39,8 @@ The code reads commands from a text file. Here is an example line:
 
 Basically a python list. The first set of numbers is the head movement UART bytes. The number of bytes is variable. Then there is a comment string and the last number is a delay, in seconds.
 
+There is a short video on YouTube of this in action: https://youtu.be/MRkvBN14EzI
+
 Enjoy!
 
 
