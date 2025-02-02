@@ -39,6 +39,10 @@ The code reads commands from a text file. Here is an example line:
 
 Basically a python list. The first set of numbers is the head movement UART bytes. The number of bytes is variable. Then there is a comment string and the last number is a delay, in seconds.
 
+All of the '.txt' files are command files. Each controls some aspect of head movement.
+
+Looking at the commands in a file, say 'eud.txt', it seems that the first 5 numbers make up a command followed by 3 positional parameters. Incrementing the 3 parameters from 0 to 255 resulted in no motion. So not sure how the 3 values work together to move the head.
+
 There is a short video on YouTube of this in action: https://youtu.be/MRkvBN14EzI
 
 Enjoy!
