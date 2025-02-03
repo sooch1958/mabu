@@ -6,24 +6,6 @@ Written by Josef Szuecs
 January 31, 2025
 
 """
-
-
-from machine import Pin,UART
-import time
-import random
-
-DEBUG = True
-
-uart = UART(1, 57400)              """
-
-Control the Catalia Mabu health care support robot head.
-
-Written by Josef Szuecs
-January 31, 2025
-
-"""
-
-
 from machine import Pin,UART
 import time
 import random
