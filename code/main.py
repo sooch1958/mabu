@@ -12,8 +12,8 @@ import random
 
 DEBUG = True
 
-uart = UART(1, 57400)                         # init with given baudrate
-uart.init(57400, bits=8, parity=None, stop=1) # init with given parameters
+uart = UART(1, 57600)                         # init with given baudrate
+uart.init(57600, bits=8, parity=None, stop=1) # init with given parameters
 
 # the head controller sends back responses to the tablet. Just read and ignore.
 def clear_RX_data():
