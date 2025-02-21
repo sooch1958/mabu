@@ -7,7 +7,7 @@ The tablet communicates to the head via a UART connection.  The head contains a 
 
 Since the communication was via UART, I hooked up a cheap USB logic analyser to the port and used Pulseview to capture the commands sent from the tablet to the head. I figured if I parsed them out and sent them to the head controller I would be able to independently control the head. This turned out to be, for the most part, true.
 
-The UART settings: 57400 bps, bits=8, parity=None, stop=1
+The UART settings: 57600 bps, bits=8, parity=None, stop=1
 
 The code provided here is a small python program that runs on a Raspberry Pi Pico.
 
